@@ -3,6 +3,8 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const cors = require('cors')
+const helmet = require('helmet')
+const config = require('../config/index')
 const routes = require('../api/routes/index')
 
 module.exports = ({ app }) => {
